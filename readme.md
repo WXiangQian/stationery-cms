@@ -1,58 +1,64 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# 项目基于laravel-admin1.6版本开发中~~~
+# 尝试新版本~~~
+# stationery-cms 
+基于laravel-admin开发的办公用品管理系统，针对于中小型企业
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+```
+本项目可以直接用，也可以用于二次开发，二次开发具体看相关文档
+laravel版本为5.5.*、laravel-admin版本为1.6.*
+```
+[laravel-admin文档地址](https://laravel-admin.org/docs/zh)
+### 克隆仓库
+```
+git clone git@github.com:WXiangQian/stationery-cms.git
+```
 
-## About Laravel
+### 运行环境
+```
+"php": ">=7.0.0"
+```
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+### 生成配置文件
+```
+cp .env.example .env
+```
+你可以根据情况修改 .env 文件里的内容，如数据库连接、缓存、邮件设置等。
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 生成秘钥
+```
+php artisan key:generate
+```
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+### 配置好.env以后执行以下命令进行创建数据库
+(提示directory already exists 可忽略)
 
-## Learning Laravel
+```
+php artisan admin:install
+```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+### 生成网站链接
+```
+php artisan serve
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+Laravel development server started: <http://127.0.0.1:8000>
+http://127.0.0.1:8000为该网站的临时地址
+```
 
-## Laravel Sponsors
+### 配置好.env以后执行以下命令进行创建数据库
+(提示directory already exists 可忽略)
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+```
+php artisan admin:install
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Pulse Storm](http://www.pulsestorm.net/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
+### 后台
 
-## Contributing
+描述 | 详情
+--- |---
+后台登录地址 | http://127.0.0.1:8000/admin/auth/login
+账号 | admin
+密码 | admin
+菜单管理地址 | http://127.0.0.1:8000/admin/auth/menu
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+如有问题可添加我QQ：175023117
+（备注：GitHub）
