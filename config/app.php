@@ -176,6 +176,10 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        \Encore\Admin\AdminServiceProvider::class,
+        \Fideloper\Proxy\TrustedProxyServiceProvider::class,
+        \Laravel\Tinker\TinkerServiceProvider::class,
+        \Carbon\Laravel\ServiceProvider::class,
 
     ],
 
@@ -225,6 +229,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Admin' => \Encore\Admin\Facades\Admin::class,
 
     ],
 
