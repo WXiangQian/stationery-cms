@@ -36,19 +36,18 @@ php artisan key:generate
 php artisan admin:install
 ```
 
+### 如需测试数据，则执行以下命令填充数据库数据
+
+```
+php artisan db:seed
+```
+
 ### 生成网站链接
 ```
 php artisan serve
 
 Laravel development server started: <http://127.0.0.1:8000>
 http://127.0.0.1:8000为该网站的临时地址
-```
-
-### 配置好.env以后执行以下命令进行创建数据库
-(提示directory already exists 可忽略)
-
-```
-php artisan admin:install
 ```
 
 ### 后台
