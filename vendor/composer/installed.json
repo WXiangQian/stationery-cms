@@ -949,6 +949,60 @@
         "description": "Highlight PHP code in terminal"
     },
     {
+        "name": "jxlwqq/env-manager",
+        "version": "0.1.0",
+        "version_normalized": "0.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jxlwqq/env-manager.git",
+            "reference": "faeaf2f1d110dbfd88e715d71f289b128ceebda0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jxlwqq/env-manager/zipball/faeaf2f1d110dbfd88e715d71f289b128ceebda0",
+            "reference": "faeaf2f1d110dbfd88e715d71f289b128ceebda0",
+            "shasum": ""
+        },
+        "require": {
+            "encore/laravel-admin": "~1.6",
+            "php": ">=7.0.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~6.0"
+        },
+        "time": "2018-10-26T10:29:14+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Jxlwqq\\EnvManager\\EnvManagerServiceProvider"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Jxlwqq\\EnvManager\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "jxlwqq",
+                "email": "jxlwqq@gmail.com"
+            }
+        ],
+        "description": "Env Manager for Laravel-admin",
+        "homepage": "https://github.com/jxlwqq/env-manager",
+        "keywords": [
+            "extension",
+            "laravel-admin"
+        ]
+    },
+    {
         "name": "laravel/framework",
         "version": "v5.5.44",
         "version_normalized": "5.5.44.0",

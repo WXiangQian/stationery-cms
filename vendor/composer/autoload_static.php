@@ -14,9 +14,9 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '4e8671d7be9056dcd04ddd9e8e15f9cc' => __DIR__ . '/..' . '/encore/laravel-admin/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
-        '4e8671d7be9056dcd04ddd9e8e15f9cc' => __DIR__ . '/..' . '/encore/laravel-admin/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -81,6 +81,7 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         ),
         'J' => 
         array (
+            'Jxlwqq\\EnvManager\\' => 18,
             'JakubOnderka\\PhpConsoleHighlighter\\' => 35,
             'JakubOnderka\\PhpConsoleColor\\' => 29,
         ),
@@ -249,6 +250,10 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
         ),
+        'Jxlwqq\\EnvManager\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jxlwqq/env-manager/src',
+        ),
         'JakubOnderka\\PhpConsoleHighlighter\\' => 
         array (
             0 => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src',
@@ -349,8 +354,10 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
 
     public static $classMap = array (
         'App\\Admin\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Admin/Controllers/AuthController.php',
+        'App\\Admin\\Controllers\\DepartmentsController' => __DIR__ . '/../..' . '/app/Admin/Controllers/DepartmentsController.php',
         'App\\Admin\\Controllers\\ExampleController' => __DIR__ . '/../..' . '/app/Admin/Controllers/ExampleController.php',
         'App\\Admin\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Admin/Controllers/HomeController.php',
+        'App\\Admin\\Controllers\\UsersController' => __DIR__ . '/../..' . '/app/Admin/Controllers/UsersController.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -364,6 +371,9 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\BaseModel' => __DIR__ . '/../..' . '/app/Models/BaseModel.php',
+        'App\\Models\\Department' => __DIR__ . '/../..' . '/app/Models/Department.php',
+        'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -2256,6 +2266,10 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/Highlighter.php',
         'JsonSerializable' => __DIR__ . '/..' . '/nesbot/carbon/src/JsonSerializable.php',
+        'Jxlwqq\\EnvManager\\Env' => __DIR__ . '/..' . '/jxlwqq/env-manager/src/Env.php',
+        'Jxlwqq\\EnvManager\\EnvManager' => __DIR__ . '/..' . '/jxlwqq/env-manager/src/EnvManager.php',
+        'Jxlwqq\\EnvManager\\EnvManagerServiceProvider' => __DIR__ . '/..' . '/jxlwqq/env-manager/src/EnvManagerServiceProvider.php',
+        'Jxlwqq\\EnvManager\\Http\\Controllers\\EnvManagerController' => __DIR__ . '/..' . '/jxlwqq/env-manager/src/Http/Controllers/EnvManagerController.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',

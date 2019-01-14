@@ -8,6 +8,7 @@
         "php": ">=7.0.0",
         "encore/laravel-admin": "^1.6",
         "fideloper/proxy": "~3.3",
+        "jxlwqq/env-manager": "^0.1.0",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0"
     },
