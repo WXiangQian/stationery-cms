@@ -12,5 +12,6 @@ Route::group([
 
     $router->get('/', 'HomeController@index');
     $router->resource('/departments', 'DepartmentsController');
+    $router->resource('/users', 'UsersController');
 
 });
