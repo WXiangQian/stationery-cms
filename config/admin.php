@@ -313,6 +313,9 @@ return [
     |
     */
     'extensions' => [
-
+        'env-manager' => [
+            // If the value is set to false, this extension will be disabled
+            'enable' => true
+        ]
     ],
 ];

@@ -180,7 +180,7 @@ return [
         \Fideloper\Proxy\TrustedProxyServiceProvider::class,
         \Laravel\Tinker\TinkerServiceProvider::class,
         \Carbon\Laravel\ServiceProvider::class,
-
+        \Jxlwqq\EnvManager\EnvManagerServiceProvider::class,
     ],
 
     /*
