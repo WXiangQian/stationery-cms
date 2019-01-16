@@ -117,6 +117,18 @@ class UsersController extends Controller
         $grid->mobile('手机号');
         $grid->created_at('创建时间');
 
+        $grid->filter(function($filter){
+            $filter->column(1/2, function ($filter) {
+                $filter->equal('name', '员工姓名');
+                $filter->equal('mobile', '手机号');
+            });
+            $filter->column(1/2, function ($filter) {
+                $filter->equal('d_id', '所属部门')->select(Department::where('pid', 0)->pluck('name', 'id'));
+                $filter->equal('sex', '性别')->select(['1' => '男', '2' => '女']);
+
+                $filter->between('created_at', '创建时间')->datetime();
+            });
+        });
         return $grid;
     }
 
