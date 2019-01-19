@@ -89,10 +89,18 @@ class UsersController extends Controller
 
         $show->id('ID');
         $show->name('员工名称');
+        // 如果要在字段之间添加一条分隔线：
+        // $show->divider();
         $show->department('部门', function ($d_id) {
             // 为了能够正常使用这个面板右上角的工具，必须用setResource()方法设置用户资源的url访问路径
             // $d_id->setResource('/admin/departments');
-
+            // 面板右上角默认有三个按钮编辑、删除、列表，可以分别用下面的方式关掉它们：
+            $d_id->panel()
+                ->tools(function ($tools) {
+                    $tools->disableEdit();
+                    $tools->disableList();
+                    $tools->disableDelete();
+                });
             $d_id->name('部门名称');
         });
         $show->sex('性别')->using(['0' => '未知', '1' => '男', '2' => '女']);
