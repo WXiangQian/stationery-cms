@@ -87,15 +87,18 @@ class StationeriesController extends Controller
 
         $show->id('ID');
         $show->name('申请的办公用品');
+        // 如果要在字段之间添加一条分隔线：
+        // $show->divider();
         $show->user('申请人', function ($user_id) {
             // 为了能够正常使用这个面板右上角的工具，必须用setResource()方法设置用户资源的url访问路径
             // $d_id->setResource('/admin/departments');
+            // 面板右上角默认有三个按钮编辑、删除、列表，可以分别用下面的方式关掉它们：
             $user_id->panel()
                 ->tools(function ($tools) {
                     $tools->disableEdit();
                     $tools->disableList();
                     $tools->disableDelete();
-                });;
+                });
             $user_id->name('申请人');
         });
         $show->created_at('申请时间');
@@ -116,10 +119,15 @@ class StationeriesController extends Controller
         $grid->column('user.name', '申请人');
         $grid->name('申请的办公用品');
         $grid->created_at('创建时间');
-
+        $grid->actions(function ($actions) {
+            // $actions->disableDelete();
+            // $actions->disableEdit();
+            //禁用显示详情按钮
+            $actions->disableView();
+        });
         $grid->filter(function($filter){
             $filter->like('user.name', '申请人');
-            $filter->equal('name', '申请的办公用品');
+            $filter->like('name', '申请的办公用品');
             $filter->between('created_at', '创建时间')->datetime();
         });
         return $grid;

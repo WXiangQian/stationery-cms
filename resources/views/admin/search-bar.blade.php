@@ -17,9 +17,9 @@
   }
 </style>
 
-<form action="/admin/users" method="get" class="search-form" pjax-container>
+<form action="/admin/stationeries" method="get" class="search-form" pjax-container>
   <div class="input-group input-group-sm ">
-    <input type="text" name="name" class="form-control" placeholder="请输入你要搜索的姓名">
+    <input type="text" name="name" class="form-control" placeholder="请输入你要搜索的办公用品">
     <span class="input-group-btn">
             <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
           </span>
