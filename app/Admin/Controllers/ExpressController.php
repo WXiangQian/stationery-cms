@@ -5,6 +5,8 @@ namespace App\Admin\Controllers;
 use App\Http\Controllers\Controller;
 use Encore\Admin\Controllers\HasResourceActions;
 use Encore\Admin\Layout\Content;
+use Illuminate\Http\Request;
+use Wythe\Logistics\Logistics;
 
 class ExpressController extends Controller
 {
@@ -27,34 +29,33 @@ class ExpressController extends Controller
     }
 
 
-    public function getExpressInfo()
+    public function getExpressInfo(Request $request)
     {
-        $data = [
-            'kuaidi100' => [
-                'channel' => 'kuaidi100',
-                'status' => 'success',
-                'result' => [
-                    [
-                        'status' => 200,
-                        'message'  => 'OK',
-                        'error_code' => 0,
-                        'data' => [
-                            ['time' => '2019-01-09 12:11', 'description' => '仓库-已签收'],
-                            ['time' => '2019-01-07 12:11', 'description' => '广东XX服务点'],
-                            ['time' => '2019-01-06 12:11', 'description' => '广东XX转运中心']
-                        ],
-                        'logistics_company' => '申通快递',
-                        'logistics_bill_no' => '12312211'
-                    ]
-                ]
-            ]
-        ];
-        $res = $data['kuaidi100']['result'];
-        return response()->json([
-            'code' => $res[0]['status'],
-            'message' => $res[0]['message'],
-            'data' => $res
-        ], $res[0]['status'], []);
+        $code = $request->input('code', '');
+        if (!$code) {
+            return response()->json([
+                'code' => 1,
+                'message' => '请输入要查询的快递单号',
+            ], 400);
+        }
+        $logistics = new Logistics();
+
+        $data = $logistics->query($code, 'kuaidi100');
+
+        $res = $data['kuaidi100'];
+        if (isset($res['result'])) {
+            return response()->json([
+                'code' => $res[0]['status'],
+                'message' => $res[0]['message'],
+                'data' => $res
+            ], $res[0]['status'], []);
+        } else {
+            return response()->json([
+                'code' => 1,
+                'message' => '请输入正确的快递单号',
+            ], 400);
+        }
+
     }
 
 }
