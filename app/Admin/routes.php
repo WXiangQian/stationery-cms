@@ -15,5 +15,6 @@ Route::group([
     $router->resource('/users', 'UsersController');
     $router->resource('/stationeries', 'StationeriesController');
     $router->get('/express', 'ExpressController@index');
+    $router->get('/express2', 'ExpressController@getExpressInfo');
 
 });

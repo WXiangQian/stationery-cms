@@ -113,6 +113,9 @@ class StationeriesController extends Controller
     {
         $grid = new Grid(new Stationery());
 
+        $grid->tools(function ($tools) {
+            $tools->append("<a href='/admin/express' class='btn btn-sm btn-primary' title='查询快递信息'><span class='hidden-xs'>&nbsp;&nbsp;查询快递信息</span></a>");
+        });
         $grid->model()->orderBy('id', 'desc');
 
         $grid->id('ID')->sortable();
