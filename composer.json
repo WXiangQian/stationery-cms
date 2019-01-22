@@ -10,7 +10,8 @@
         "fideloper/proxy": "~3.3",
         "jxlwqq/env-manager": "^0.1.0",
         "laravel/framework": "5.5.*",
-        "laravel/tinker": "~1.0"
+        "laravel/tinker": "~1.0",
+        "wythe/logistics": "^0.0.3"
     },
     "require-dev": {
         "filp/whoops": "~2.0",

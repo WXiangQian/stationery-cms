@@ -1,0 +1,23 @@
+{
+    "name": "wythe\/logistics",
+    "description": "查询快递物流信息",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wythe",
+            "email": "wythe.huangw@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wythe\\Logistics\\": "src"
+        }
+    }
+}

@@ -30,6 +30,7 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         ),
         'W' => 
         array (
+            'Wythe\\Logistics\\' => 16,
             'Whoops\\' => 7,
             'Webmozart\\Assert\\' => 17,
         ),
@@ -129,6 +130,10 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         'XdgBaseDir\\' => 
         array (
             0 => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src',
+        ),
+        'Wythe\\Logistics\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wythe/logistics/src',
         ),
         'Whoops\\' => 
         array (
@@ -356,8 +361,11 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         'App\\Admin\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Admin/Controllers/AuthController.php',
         'App\\Admin\\Controllers\\DepartmentsController' => __DIR__ . '/../..' . '/app/Admin/Controllers/DepartmentsController.php',
         'App\\Admin\\Controllers\\ExampleController' => __DIR__ . '/../..' . '/app/Admin/Controllers/ExampleController.php',
+        'App\\Admin\\Controllers\\ExpressController' => __DIR__ . '/../..' . '/app/Admin/Controllers/ExpressController.php',
         'App\\Admin\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Admin/Controllers/HomeController.php',
+        'App\\Admin\\Controllers\\StationeriesController' => __DIR__ . '/../..' . '/app/Admin/Controllers/StationeriesController.php',
         'App\\Admin\\Controllers\\UsersController' => __DIR__ . '/../..' . '/app/Admin/Controllers/UsersController.php',
+        'App\\Console\\Commands\\add_admin_menu_data' => __DIR__ . '/../..' . '/app/Console/Commands/add_admin_menu_data.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -373,6 +381,7 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Models\\BaseModel' => __DIR__ . '/../..' . '/app/Models/BaseModel.php',
         'App\\Models\\Department' => __DIR__ . '/../..' . '/app/Models/Department.php',
+        'App\\Models\\Stationery' => __DIR__ . '/../..' . '/app/Models/Stationery.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
@@ -4169,6 +4178,17 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         'Whoops\\Util\\Misc' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/Misc.php',
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
+        'Wythe\\Logistics\\Channel\\BaiduChannel' => __DIR__ . '/..' . '/wythe/logistics/src/Channel/BaiduChannel.php',
+        'Wythe\\Logistics\\Channel\\Channel' => __DIR__ . '/..' . '/wythe/logistics/src/Channel/Channel.php',
+        'Wythe\\Logistics\\Channel\\IckdChannel' => __DIR__ . '/..' . '/wythe/logistics/src/Channel/IckdChannel.php',
+        'Wythe\\Logistics\\Channel\\Kuaidi100Channel' => __DIR__ . '/..' . '/wythe/logistics/src/Channel/Kuaidi100Channel.php',
+        'Wythe\\Logistics\\Exceptions\\Exception' => __DIR__ . '/..' . '/wythe/logistics/src/Exceptions/Exception.php',
+        'Wythe\\Logistics\\Exceptions\\HttpException' => __DIR__ . '/..' . '/wythe/logistics/src/Exceptions/HttpException.php',
+        'Wythe\\Logistics\\Exceptions\\InvalidArgumentException' => __DIR__ . '/..' . '/wythe/logistics/src/Exceptions/InvalidArgumentException.php',
+        'Wythe\\Logistics\\Exceptions\\NoQueryAvailableException' => __DIR__ . '/..' . '/wythe/logistics/src/Exceptions/NoQueryAvailableException.php',
+        'Wythe\\Logistics\\Factory' => __DIR__ . '/..' . '/wythe/logistics/src/Factory.php',
+        'Wythe\\Logistics\\Logistics' => __DIR__ . '/..' . '/wythe/logistics/src/Logistics.php',
+        'Wythe\\Logistics\\Traits\\HttpRequest' => __DIR__ . '/..' . '/wythe/logistics/src/Traits/HttpRequest.php',
         'XdgBaseDir\\Xdg' => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src/Xdg.php',
         'phpDocumentor\\Reflection\\DocBlock' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlock.php',
         'phpDocumentor\\Reflection\\DocBlockFactory' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
