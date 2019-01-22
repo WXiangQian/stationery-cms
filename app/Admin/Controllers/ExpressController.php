@@ -44,6 +44,7 @@ class ExpressController extends Controller
 
         $res = $data['kuaidi100'];
         if (isset($res['result'])) {
+            $res = $data['kuaidi100']['result'];
             return response()->json([
                 'code' => $res[0]['status'],
                 'message' => $res[0]['message'],
