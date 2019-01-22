@@ -1,4 +1,8 @@
-
+<style>
+  .status {
+    background: url(/img/spider_search_v4.png) 70px -725px no-repeat;
+  }
+</style>
 <div class="box box-info">
   <div class="box-header with-border">
     <h3 class="box-title">快递查询</h3>
@@ -32,30 +36,31 @@
   </div>
 
 
-    <div class="relative query-box" style="margin-left: 500px;padding-bottom: 30px;">
-      <table border="0" style="font-size: 18px;">
-        <tbody>
-        <tr>
-          <th>时间</th>
-          <th>地点和跟踪进度</th>
-          <th>快递信息</th>
-        </tr>
-        <tr>
-          <td valign="middle">暂无数据</td>
-          <td valign="middle">暂无数据</td>
-          <td valign="middle">暂无数据</td>
-        </tr>
-        <tr>
-          <td>2019-01-09 12:11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-          <td>货物已交付京东物流</td>
-          <td>京东快递</td>
-        </tr>
-        <tr>
-          <td>2019-01-08 12:11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-          <td>货物已到达【成都青白江分拣中心】</td>
-          <td>京东快递</td>
-        </tr>
-        </tbody>
+    <div class="relative query-box table-responsive" style="padding-bottom: 30px;">
+      <table style="font-size: 18px;" class="table table-bordered text-center">
+
+            <tr >
+              <th colspan="2">时间&nbsp;&nbsp;</th>
+              <th>状态</th>
+              <th colspan="3">&nbsp;&nbsp;地点和跟踪进度</th>
+            </tr>
+            <tr>
+              <td  colspan="2">暂无数据</td>
+              <td class="status">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+              <td colspan="3">暂无数据</td>
+            </tr>
+            <tr>
+              <td colspan="2">2019-01-09 12:11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+              <td class="status">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+              <td colspan="3">货物已交付京东物流</td>
+            </tr>
+            <tr>
+              <td colspan="2">2019-01-08 12:11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+              <td class="status">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+              <td colspan="3">货物已到达【成都青白江分拣中心】</td>
+            </tr>
+
+
       </table>
     </div>
 
