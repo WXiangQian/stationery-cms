@@ -1,7 +1,5 @@
-# 项目基于laravel-admin1.6版本开发中~~~
-# 尝试新版本~~~
 # stationery-cms 
-基于laravel-admin开发的办公用品管理系统，针对于中小型企业
+基于laravel-admin开发的办公用品管理系统，针对于中小型企业，项目内有查询快递功能，方便用户知道购买的办公用品的具体信息
 
 ```
 本项目可以直接用，也可以用于二次开发，二次开发具体看相关文档
@@ -58,6 +56,16 @@ http://127.0.0.1:8000为该网站的临时地址
 账号 | admin
 密码 | admin
 菜单管理地址 | http://127.0.0.1:8000/admin/auth/menu
+员工管理路径 | users
+部门管理路径 | departments
+办公用品管理路径 | stationeries
+env变量管理路径 | EnvManager
 
+```
+进入菜单管理地址，新增板块可方便进入，路径上述已给出
+也可执行命令来添加菜单地址
+php artisan add_admin_menu_data
+```
 如有问题可添加我QQ：175023117
 （备注：GitHub）
+可以伸出你的小手点下star
