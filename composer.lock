@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05c68389a8f6844849b2c3059d1e758d",
+    "content-hash": "b7cdb0b4f058306ae0f9030928f2f7ac",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -709,6 +709,58 @@
             ],
             "description": "Highlight PHP code in terminal",
             "time": "2018-09-29T18:48:56+00:00"
+        },
+        {
+            "name": "jxlwqq/composer-viewer",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/composer-viewer.git",
+                "reference": "e6d0075c196e7edd96c25f64c26ea2a9edf1fab9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/composer-viewer/zipball/e6d0075c196e7edd96c25f64c26ea2a9edf1fab9",
+                "reference": "e6d0075c196e7edd96c25f64c26ea2a9edf1fab9",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jxlwqq\\ComposerViewer\\ComposerViewerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jxlwqq\\ComposerViewer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jxlwqq",
+                    "email": "jxlwqq@gmail.com"
+                }
+            ],
+            "description": "Composer Viewer for Laravel-admin",
+            "homepage": "https://github.com/jxlwqq/composer-viewer",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-10-23T14:45:10+00:00"
         },
         {
             "name": "jxlwqq/env-manager",

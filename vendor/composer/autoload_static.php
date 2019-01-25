@@ -83,6 +83,7 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         'J' => 
         array (
             'Jxlwqq\\EnvManager\\' => 18,
+            'Jxlwqq\\ComposerViewer\\' => 22,
             'JakubOnderka\\PhpConsoleHighlighter\\' => 35,
             'JakubOnderka\\PhpConsoleColor\\' => 29,
         ),
@@ -258,6 +259,10 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         'Jxlwqq\\EnvManager\\' => 
         array (
             0 => __DIR__ . '/..' . '/jxlwqq/env-manager/src',
+        ),
+        'Jxlwqq\\ComposerViewer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jxlwqq/composer-viewer/src',
         ),
         'JakubOnderka\\PhpConsoleHighlighter\\' => 
         array (
@@ -2275,6 +2280,9 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/Highlighter.php',
         'JsonSerializable' => __DIR__ . '/..' . '/nesbot/carbon/src/JsonSerializable.php',
+        'Jxlwqq\\ComposerViewer\\ComposerViewer' => __DIR__ . '/..' . '/jxlwqq/composer-viewer/src/ComposerViewer.php',
+        'Jxlwqq\\ComposerViewer\\ComposerViewerServiceProvider' => __DIR__ . '/..' . '/jxlwqq/composer-viewer/src/ComposerViewerServiceProvider.php',
+        'Jxlwqq\\ComposerViewer\\Http\\Controllers\\ComposerViewerController' => __DIR__ . '/..' . '/jxlwqq/composer-viewer/src/Http/Controllers/ComposerViewerController.php',
         'Jxlwqq\\EnvManager\\Env' => __DIR__ . '/..' . '/jxlwqq/env-manager/src/Env.php',
         'Jxlwqq\\EnvManager\\EnvManager' => __DIR__ . '/..' . '/jxlwqq/env-manager/src/EnvManager.php',
         'Jxlwqq\\EnvManager\\EnvManagerServiceProvider' => __DIR__ . '/..' . '/jxlwqq/env-manager/src/EnvManagerServiceProvider.php',

@@ -949,6 +949,60 @@
         "description": "Highlight PHP code in terminal"
     },
     {
+        "name": "jxlwqq/composer-viewer",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/laravel-admin-extensions/composer-viewer.git",
+            "reference": "e6d0075c196e7edd96c25f64c26ea2a9edf1fab9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/laravel-admin-extensions/composer-viewer/zipball/e6d0075c196e7edd96c25f64c26ea2a9edf1fab9",
+            "reference": "e6d0075c196e7edd96c25f64c26ea2a9edf1fab9",
+            "shasum": ""
+        },
+        "require": {
+            "encore/laravel-admin": "~1.6",
+            "php": ">=7.0.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~6.0"
+        },
+        "time": "2018-10-23T14:45:10+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Jxlwqq\\ComposerViewer\\ComposerViewerServiceProvider"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Jxlwqq\\ComposerViewer\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "jxlwqq",
+                "email": "jxlwqq@gmail.com"
+            }
+        ],
+        "description": "Composer Viewer for Laravel-admin",
+        "homepage": "https://github.com/jxlwqq/composer-viewer",
+        "keywords": [
+            "extension",
+            "laravel-admin"
+        ]
+    },
+    {
         "name": "jxlwqq/env-manager",
         "version": "0.1.0",
         "version_normalized": "0.1.0.0",
