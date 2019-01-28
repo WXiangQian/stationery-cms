@@ -181,6 +181,7 @@ return [
         \Laravel\Tinker\TinkerServiceProvider::class,
         \Carbon\Laravel\ServiceProvider::class,
         \Jxlwqq\EnvManager\EnvManagerServiceProvider::class,
+        \Jxlwqq\ComposerViewer\ComposerViewerServiceProvider::class,
     ],
 
     /*
