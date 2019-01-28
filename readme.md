@@ -66,6 +66,12 @@ env变量管理路径 | EnvManager
 也可执行命令来添加菜单地址
 php artisan add_admin_menu_data
 ```
+### 头像问题
+```
+在.env中配置APP_URL=
+配置好属于自己的域名，然后修改头像就可以看到真实路径了
+```
+
 如有问题可添加我QQ：175023117
 （备注：GitHub）
 可以伸出你的小手点下star
