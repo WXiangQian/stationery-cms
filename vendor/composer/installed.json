@@ -513,17 +513,17 @@
     },
     {
         "name": "encore/laravel-admin",
-        "version": "v1.6.8",
-        "version_normalized": "1.6.8.0",
+        "version": "v1.6.9",
+        "version_normalized": "1.6.9.0",
         "source": {
             "type": "git",
             "url": "https://github.com/z-song/laravel-admin.git",
-            "reference": "818e6691f6ed419f9d30ad4aaca0846fb1243313"
+            "reference": "ca52f71b1dfd2d830ff52f927c19d284e460e8e9"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/z-song/laravel-admin/zipball/818e6691f6ed419f9d30ad4aaca0846fb1243313",
-            "reference": "818e6691f6ed419f9d30ad4aaca0846fb1243313",
+            "url": "https://api.github.com/repos/z-song/laravel-admin/zipball/ca52f71b1dfd2d830ff52f927c19d284e460e8e9",
+            "reference": "ca52f71b1dfd2d830ff52f927c19d284e460e8e9",
             "shasum": ""
         },
         "require": {
@@ -544,7 +544,7 @@
             "intervention/image": "Required to handling and manipulation upload images (~2.3).",
             "spatie/eloquent-sortable": "Required to built orderable gird."
         },
-        "time": "2018-12-13T06:35:28+00:00",
+        "time": "2019-01-13T04:07:28+00:00",
         "type": "library",
         "extra": {
             "laravel": {
@@ -1648,17 +1648,17 @@
     },
     {
         "name": "nikic/php-parser",
-        "version": "v4.1.1",
-        "version_normalized": "4.1.1.0",
+        "version": "v4.2.0",
+        "version_normalized": "4.2.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/nikic/PHP-Parser.git",
-            "reference": "8aae5b59b83bb4d0dbf07b0a835f2680a658f610"
+            "reference": "594bcae1fc0bccd3993d2f0d61a018e26ac2865a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/8aae5b59b83bb4d0dbf07b0a835f2680a658f610",
-            "reference": "8aae5b59b83bb4d0dbf07b0a835f2680a658f610",
+            "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/594bcae1fc0bccd3993d2f0d61a018e26ac2865a",
+            "reference": "594bcae1fc0bccd3993d2f0d61a018e26ac2865a",
             "shasum": ""
         },
         "require": {
@@ -1668,14 +1668,14 @@
         "require-dev": {
             "phpunit/phpunit": "^6.5 || ^7.0"
         },
-        "time": "2018-12-26T11:32:39+00:00",
+        "time": "2019-01-12T16:31:37+00:00",
         "bin": [
             "bin/php-parse"
         ],
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.1-dev"
+                "dev-master": "4.2-dev"
             }
         },
         "installation-source": "dist",
