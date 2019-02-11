@@ -10,6 +10,7 @@
         "fideloper/proxy": "~3.3",
         "jxlwqq/composer-viewer": "^1.0",
         "jxlwqq/env-manager": "^0.1.0",
+        "laravel-admin-ext/lock-screen": "^1.0",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
         "wythe/logistics": "^0.0.3"

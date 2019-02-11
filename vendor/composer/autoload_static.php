@@ -98,6 +98,7 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         ),
         'E' => 
         array (
+            'Encore\\Admin\\LockScreen\\' => 24,
             'Encore\\Admin\\' => 13,
             'Egulias\\EmailValidator\\' => 23,
         ),
@@ -283,6 +284,10 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         'Faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
+        ),
+        'Encore\\Admin\\LockScreen\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel-admin-ext/lock-screen/src',
         ),
         'Encore\\Admin\\' => 
         array (
@@ -962,6 +967,10 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         'Encore\\Admin\\Layout\\Column' => __DIR__ . '/..' . '/encore/laravel-admin/src/Layout/Column.php',
         'Encore\\Admin\\Layout\\Content' => __DIR__ . '/..' . '/encore/laravel-admin/src/Layout/Content.php',
         'Encore\\Admin\\Layout\\Row' => __DIR__ . '/..' . '/encore/laravel-admin/src/Layout/Row.php',
+        'Encore\\Admin\\LockScreen\\Http\\Controllers\\LockScreenController' => __DIR__ . '/..' . '/laravel-admin-ext/lock-screen/src/Http/Controllers/LockScreenController.php',
+        'Encore\\Admin\\LockScreen\\Http\\Middleware\\LockScreen' => __DIR__ . '/..' . '/laravel-admin-ext/lock-screen/src/Http/Middleware/LockScreen.php',
+        'Encore\\Admin\\LockScreen\\LockScreen' => __DIR__ . '/..' . '/laravel-admin-ext/lock-screen/src/LockScreen.php',
+        'Encore\\Admin\\LockScreen\\LockScreenServiceProvider' => __DIR__ . '/..' . '/laravel-admin-ext/lock-screen/src/LockScreenServiceProvider.php',
         'Encore\\Admin\\Middleware\\Authenticate' => __DIR__ . '/..' . '/encore/laravel-admin/src/Middleware/Authenticate.php',
         'Encore\\Admin\\Middleware\\Bootstrap' => __DIR__ . '/..' . '/encore/laravel-admin/src/Middleware/Bootstrap.php',
         'Encore\\Admin\\Middleware\\LogOperation' => __DIR__ . '/..' . '/encore/laravel-admin/src/Middleware/LogOperation.php',

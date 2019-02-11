@@ -1057,6 +1057,59 @@
         ]
     },
     {
+        "name": "laravel-admin-ext/lock-screen",
+        "version": "v1.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/laravel-admin-extensions/lock-screen.git",
+            "reference": "847b40fe32c9248b18d60b015860c2530232097d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/laravel-admin-extensions/lock-screen/zipball/847b40fe32c9248b18d60b015860c2530232097d",
+            "reference": "847b40fe32c9248b18d60b015860c2530232097d",
+            "shasum": ""
+        },
+        "require": {
+            "encore/laravel-admin": "~1.6",
+            "php": ">=7.0.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~6.0"
+        },
+        "time": "2018-11-14T15:28:44+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Encore\\Admin\\LockScreen\\LockScreenServiceProvider"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Encore\\Admin\\LockScreen\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "z-song"
+            }
+        ],
+        "description": "description...",
+        "homepage": "https://github.com/laravel-admin-ext/lock-screen",
+        "keywords": [
+            "extension",
+            "laravel-admin"
+        ]
+    },
+    {
         "name": "laravel/framework",
         "version": "v5.5.44",
         "version_normalized": "5.5.44.0",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7cdb0b4f058306ae0f9030928f2f7ac",
+    "content-hash": "0916ac385882a83162add5693063d4ab",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -813,6 +813,57 @@
                 "laravel-admin"
             ],
             "time": "2018-10-26T10:29:14+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/lock-screen",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/lock-screen.git",
+                "reference": "847b40fe32c9248b18d60b015860c2530232097d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/lock-screen/zipball/847b40fe32c9248b18d60b015860c2530232097d",
+                "reference": "847b40fe32c9248b18d60b015860c2530232097d",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Admin\\LockScreen\\LockScreenServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Admin\\LockScreen\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "z-song"
+                }
+            ],
+            "description": "description...",
+            "homepage": "https://github.com/laravel-admin-ext/lock-screen",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-11-14T15:28:44+00:00"
         },
         {
             "name": "laravel/framework",
