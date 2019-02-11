@@ -182,6 +182,7 @@ return [
         \Carbon\Laravel\ServiceProvider::class,
         \Jxlwqq\EnvManager\EnvManagerServiceProvider::class,
         \Jxlwqq\ComposerViewer\ComposerViewerServiceProvider::class,
+        \Encore\Admin\LockScreen\LockScreenServiceProvider::class,
     ],
 
     /*
