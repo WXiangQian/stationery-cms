@@ -71,6 +71,16 @@ php artisan add_admin_menu_data
 在.env中配置APP_URL=
 配置好属于自己的域名，然后修改头像就可以看到真实路径了
 ```
+**==================================后台截图==================================**
+
+![image](https://github.com/WXiangQian/stationery-cms/raw/master/demo/env.png)
+
+![image](https://github.com/WXiangQian/stationery-cms/raw/master/demo/lock.png)
+
+![image](https://github.com/WXiangQian/stationery-cms/raw/master/demo/express.png)
+
+![image](https://github.com/WXiangQian/stationery-cms/raw/master/demo/stationeries.png)
+
 
 如有问题可添加我QQ：175023117
 （备注：GitHub）
