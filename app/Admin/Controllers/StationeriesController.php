@@ -2,6 +2,7 @@
 
 namespace App\Admin\Controllers;
 
+use App\Admin\Extensions\ExcelExpoter;
 use App\Http\Controllers\Controller;
 use App\Models\Stationery;
 use App\Models\User;
@@ -112,6 +113,11 @@ class StationeriesController extends Controller
     protected function grid()
     {
         $grid = new Grid(new Stationery());
+        // 导出
+        $excel = new ExcelExpoter();
+        $date = date('Y-m-d H:i:s', time());
+        $excel->setAttr('办公用品管理'.$date, '办公用品管理', ['id','申请人','申请的办公用品'], ['id','user.name','name']);
+        $grid->exporter($excel);
 
         $grid->tools(function ($tools) {
             $tools->append("<a href='/admin/express' class='btn btn-sm btn-primary' title='查询快递信息'><span class='hidden-xs'>&nbsp;&nbsp;查询快递信息</span></a>");

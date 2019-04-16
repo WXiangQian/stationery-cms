@@ -2,6 +2,7 @@
 
 namespace App\Admin\Controllers;
 
+use App\Admin\Extensions\ExcelExpoter;
 use App\Http\Controllers\Controller;
 use App\Models\Department;
 use App\Models\User;
@@ -111,6 +112,11 @@ class UsersController extends Controller
     protected function grid()
     {
         $grid = new Grid(new User);
+        // 导出
+        $excel = new ExcelExpoter();
+        $date = date('Y-m-d H:i:s', time());
+        $excel->setAttr('员工管理'.$date, '员工管理', ['id','姓名','性别'], ['id','name','sex']);
+        $grid->exporter($excel);
 
         $grid->model()->orderBy('id', 'desc');
 
