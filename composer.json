@@ -13,6 +13,7 @@
         "laravel-admin-ext/lock-screen": "^1.0",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
+        "maatwebsite/excel": "~2.1.0",
         "wythe/logistics": "^0.0.3"
     },
     "require-dev": {
@@ -59,5 +60,11 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
     }
 }
