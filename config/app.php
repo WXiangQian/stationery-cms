@@ -183,6 +183,7 @@ return [
         \Jxlwqq\EnvManager\EnvManagerServiceProvider::class,
         \Jxlwqq\ComposerViewer\ComposerViewerServiceProvider::class,
         \Encore\Admin\LockScreen\LockScreenServiceProvider::class,
+        \Maatwebsite\Excel\ExcelServiceProvider::class,
     ],
 
     /*
