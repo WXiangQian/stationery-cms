@@ -116,7 +116,10 @@ class StationeriesController extends Controller
         // 导出
         $excel = new ExcelExpoter();
         $date = date('Y-m-d H:i:s', time());
-        $excel->setAttr('办公用品管理'.$date, '办公用品管理', ['id','申请人','申请的办公用品'], ['id','user.name','name']);
+        $excel->setAttr('办公用品管理'.$date, '办公用品管理',
+            ['id','申请人','申请的办公用品','申请时间'],
+            ['id','user.name','name','created_at']
+        );
         $grid->exporter($excel);
 
         $grid->tools(function ($tools) {

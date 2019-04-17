@@ -25,11 +25,18 @@ class ExcelExpoter extends AbstractExporter
             $excel->sheet($this->sheet_name, function($sheet) {
                 // 这段逻辑是从表格数据中取出需要导出的字段
                 $body = $this->body;
+
                 $bodyRows = collect($this->getData())->map(function ($item) use($body) {
                     $arr = [];
 
                     foreach($body as $value) {
-                        $arr[] = array_get($item, $value);
+                        if ($value == 'sex') {
+                            if ($item['sex'] == 1)  $item['sex'] = '男';
+                            if ($item['sex'] == 2)  $item['sex'] = '女';
+                            $arr[] = array_get($item, $value);
+                        } else {
+                            $arr[] = array_get($item, $value);
+                        }
                     }
 
                     return $arr;

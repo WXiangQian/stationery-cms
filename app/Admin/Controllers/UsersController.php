@@ -115,7 +115,10 @@ class UsersController extends Controller
         // 导出
         $excel = new ExcelExpoter();
         $date = date('Y-m-d H:i:s', time());
-        $excel->setAttr('员工管理'.$date, '员工管理', ['id','姓名','性别'], ['id','name','sex']);
+        $excel->setAttr('员工管理'.$date, '员工管理',
+            ['id','姓名','部门','性别','手机号','入职时间'],
+            ['id','name','department.name','sex','mobile','created_at']
+        );
         $grid->exporter($excel);
 
         $grid->model()->orderBy('id', 'desc');
