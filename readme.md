@@ -1,11 +1,13 @@
 # stationery-cms 
-基于laravel-admin开发的办公用品管理系统，针对于中小型企业，项目内有查询快递功能，方便用户知道购买的办公用品的具体信息
+基于laravel-admin开发的办公用品管理系统，针对于中小型企业，项目内有查询快递功能，方便用户知道购买的办公用品的具体信息。新增导出excel功能方便公司对数据进行管理
 
 ```
 本项目可以直接用，也可以用于二次开发，二次开发具体看相关文档
 laravel版本为5.5.*、laravel-admin版本为1.6.*
 ```
 [laravel-admin文档地址](https://laravel-admin.org/docs/zh)
+
+[issues提交问题](https://github.com/WXiangQian/stationery-cms/issues)
 ### 克隆仓库
 ```
 git clone git@github.com:WXiangQian/stationery-cms.git
