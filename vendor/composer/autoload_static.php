@@ -102,6 +102,7 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         ),
         'E' => 
         array (
+            'Encore\\Admin\\LogViewer\\' => 23,
             'Encore\\Admin\\LockScreen\\' => 24,
             'Encore\\Admin\\' => 13,
             'Egulias\\EmailValidator\\' => 23,
@@ -301,6 +302,10 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
         ),
+        'Encore\\Admin\\LogViewer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel-admin-ext/log-viewer/src',
+        ),
         'Encore\\Admin\\LockScreen\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel-admin-ext/lock-screen/src',
@@ -399,6 +404,7 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         'App\\Admin\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Admin/Controllers/HomeController.php',
         'App\\Admin\\Controllers\\StationeriesController' => __DIR__ . '/../..' . '/app/Admin/Controllers/StationeriesController.php',
         'App\\Admin\\Controllers\\UsersController' => __DIR__ . '/../..' . '/app/Admin/Controllers/UsersController.php',
+        'App\\Admin\\Extensions\\ExcelExpoter' => __DIR__ . '/../..' . '/app/Admin/Extensions/ExcelExpoter.php',
         'App\\Console\\Commands\\add_admin_menu_data' => __DIR__ . '/../..' . '/app/Console/Commands/add_admin_menu_data.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
@@ -995,6 +1001,10 @@ class ComposerStaticInitba2990eb5cc3cd5f0a4cd3d15b24d4fa
         'Encore\\Admin\\LockScreen\\Http\\Middleware\\LockScreen' => __DIR__ . '/..' . '/laravel-admin-ext/lock-screen/src/Http/Middleware/LockScreen.php',
         'Encore\\Admin\\LockScreen\\LockScreen' => __DIR__ . '/..' . '/laravel-admin-ext/lock-screen/src/LockScreen.php',
         'Encore\\Admin\\LockScreen\\LockScreenServiceProvider' => __DIR__ . '/..' . '/laravel-admin-ext/lock-screen/src/LockScreenServiceProvider.php',
+        'Encore\\Admin\\LogViewer\\BootExtension' => __DIR__ . '/..' . '/laravel-admin-ext/log-viewer/src/BootExtension.php',
+        'Encore\\Admin\\LogViewer\\LogController' => __DIR__ . '/..' . '/laravel-admin-ext/log-viewer/src/LogController.php',
+        'Encore\\Admin\\LogViewer\\LogViewer' => __DIR__ . '/..' . '/laravel-admin-ext/log-viewer/src/LogViewer.php',
+        'Encore\\Admin\\LogViewer\\LogViewerServiceProvider' => __DIR__ . '/..' . '/laravel-admin-ext/log-viewer/src/LogViewerServiceProvider.php',
         'Encore\\Admin\\Middleware\\Authenticate' => __DIR__ . '/..' . '/encore/laravel-admin/src/Middleware/Authenticate.php',
         'Encore\\Admin\\Middleware\\Bootstrap' => __DIR__ . '/..' . '/encore/laravel-admin/src/Middleware/Bootstrap.php',
         'Encore\\Admin\\Middleware\\LogOperation' => __DIR__ . '/..' . '/encore/laravel-admin/src/Middleware/LogOperation.php',

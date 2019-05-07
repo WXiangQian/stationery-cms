@@ -11,6 +11,7 @@
         "jxlwqq/composer-viewer": "^1.0",
         "jxlwqq/env-manager": "^0.1.0",
         "laravel-admin-ext/lock-screen": "^1.0",
+        "laravel-admin-ext/log-viewer": "^1.0",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
         "maatwebsite/excel": "~2.1.0",

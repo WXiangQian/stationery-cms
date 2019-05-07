@@ -1170,6 +1170,61 @@
         ]
     },
     {
+        "name": "laravel-admin-ext/log-viewer",
+        "version": "v1.0.3",
+        "version_normalized": "1.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/laravel-admin-extensions/log-viewer.git",
+            "reference": "742a2550746c9346d463249ba16b8fba9ac9cf97"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/laravel-admin-extensions/log-viewer/zipball/742a2550746c9346d463249ba16b8fba9ac9cf97",
+            "reference": "742a2550746c9346d463249ba16b8fba9ac9cf97",
+            "shasum": ""
+        },
+        "require": {
+            "encore/laravel-admin": "~1.6",
+            "php": ">=7.0.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~6.0"
+        },
+        "time": "2018-11-13T17:17:36+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Encore\\Admin\\LogViewer\\LogViewerServiceProvider"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Encore\\Admin\\LogViewer\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "z-song",
+                "email": "zosong@126.com"
+            }
+        ],
+        "description": "Log viewer for laravel",
+        "homepage": "https://github.com/laravel-admin-extensions/log-viewer",
+        "keywords": [
+            "Viewer",
+            "laravel-admin",
+            "log"
+        ]
+    },
+    {
         "name": "laravel/framework",
         "version": "v5.5.44",
         "version_normalized": "5.5.44.0",
