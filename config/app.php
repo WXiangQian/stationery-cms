@@ -184,6 +184,7 @@ return [
         \Jxlwqq\ComposerViewer\ComposerViewerServiceProvider::class,
         \Encore\Admin\LockScreen\LockScreenServiceProvider::class,
         \Maatwebsite\Excel\ExcelServiceProvider::class,
+        \Encore\Admin\LogViewer\LogViewerServiceProvider::class,
     ],
 
     /*
