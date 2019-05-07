@@ -67,6 +67,9 @@ env变量管理路径 | EnvManager
 进入菜单管理地址，新增板块可方便进入，路径上述已给出
 也可执行命令来添加菜单地址
 php artisan add_admin_menu_data
+
+php artisan admin:import log-viewer
+添加日志查看，切记只执行一次
 ```
 ### 头像问题
 ```
@@ -82,6 +85,8 @@ php artisan add_admin_menu_data
 ![image](https://github.com/WXiangQian/stationery-cms/raw/master/demo/express.png)
 
 ![image](https://github.com/WXiangQian/stationery-cms/raw/master/demo/stationeries.png)
+
+![image](https://github.com/WXiangQian/stationery-cms/raw/master/demo/log.png)
 
 
 如有问题可添加我QQ：175023117
