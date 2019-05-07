@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-//    return view('welcome');
-    return redirect('/admin/auth/login');
-});
+//Route::get('/', function () {
+////    return view('welcome');
+//    return redirect('/admin/auth/login');
+//});
