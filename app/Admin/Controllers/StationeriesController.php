@@ -103,6 +103,7 @@ class StationeriesController extends Controller
             $user_id->name('申请人');
         });
         $show->created_at('申请时间');
+        $show->url('购买链接');
         // style的取值可以是 primary、info、danger、warning、default
         $show->panel()
             ->style('info')
@@ -130,6 +131,9 @@ class StationeriesController extends Controller
         $grid->id('ID')->sortable();
         $grid->column('user.name', '申请人');
         $grid->name('申请的办公用品');
+        $grid->url('购买链接')->display(function ($url) {
+            return "<a href='{$url}' target='_blank'>$url</a>";
+        });
         $grid->created_at('创建时间');
         $grid->actions(function ($actions) {
             // $actions->disableDelete();
@@ -157,6 +161,7 @@ class StationeriesController extends Controller
         $form->select('user_id', '申请人')
             ->options(User::pluck('name', 'id'))
             ->rules('required');
+        $form->url('url', '购买链接');
         return $form;
     }
 }
