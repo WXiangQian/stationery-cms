@@ -17,6 +17,7 @@ class CreateStationeriesSeeder extends Seeder
             DB::table('stationeries')->insert([
                 'user_id' => rand(1,10),
                 'name' => $name,
+                'url' => 'https://wxiangqian.github.io',
                 'created_at' => date('Y-m-d H:i:s', time()),
                 'updated_at' => date('Y-m-d H:i:s', time()),
             ]);
