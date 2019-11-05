@@ -7,7 +7,6 @@ laravel版本为5.5.*、laravel-admin版本为1.6.*
 ```
 [laravel-admin文档地址](https://laravel-admin.org/docs/zh)
 
-[issues提交问题](https://github.com/WXiangQian/stationery-cms/issues)
 ### 克隆仓库
 ```
 git clone git@github.com:WXiangQian/stationery-cms.git
@@ -78,17 +77,16 @@ php artisan admin:import log-viewer
 ```
 **==================================后台截图==================================**
 
-![image](https://github.com/WXiangQian/stationery-cms/raw/master/demo/env.png)
+![image](./demo/env.png)
 
-![image](https://github.com/WXiangQian/stationery-cms/raw/master/demo/lock.png)
+![image](./demo/lock.png)
 
-![image](https://github.com/WXiangQian/stationery-cms/raw/master/demo/express.png)
+![image](./demo/express.png)
 
-![image](https://github.com/WXiangQian/stationery-cms/raw/master/demo/stationeries.png)
+![image](./demo/stationeries.png)
 
-![image](https://github.com/WXiangQian/stationery-cms/raw/master/demo/log.png)
+![image](./demo/log.png)
 
 
-如有问题可添加我QQ：175023117
-（备注：GitHub）
+如有问题可[issues](https://github.com/WXiangQian/stationery-cms/issues)提交问题
 可以伸出你的小手点下star
