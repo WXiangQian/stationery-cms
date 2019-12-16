@@ -1,5 +1,17 @@
-# stationery-cms 
+
+<h2 align="center">
+ stationery-cms 
+</h2>
+<p align="center">
 基于laravel-admin开发的办公用品管理系统，针对于中小型企业，项目内有查询快递功能，方便用户知道购买的办公用品的具体信息。新增导出excel功能方便公司对数据进行管理
+</p>
+
+
+[![GitHub issues](https://img.shields.io/github/issues/WXiangQian/stationery-cms)](https://github.com/WXiangQian/stationery-cms/issues)
+[![GitHub stars](https://img.shields.io/github/stars/WXiangQian/stationery-cms.svg?style=social&label=Star&maxAge=2592000)](https://github.com/WXiangQian/stationery-cms/stargazers/)
+[![GitHub forks](https://img.shields.io/github/forks/WXiangQian/stationery-cms.svg?style=social&label=fork&maxAge=2592000)](https://github.com/WXiangQian/stationery-cms/network/members/)
+[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+
 
 ```
 本项目可以直接用，也可以用于二次开发，二次开发具体看相关文档
@@ -88,5 +100,5 @@ php artisan admin:import log-viewer
 ![image](./demo/log.png)
 
 
-如有问题可[issues](https://github.com/WXiangQian/stationery-cms/issues)提交问题
-可以伸出你的小手点下star
+#### 如何贡献
+所有合理的改动、优化、修正，新的组件，或者文档的修正、更新 相关的提交都会被接收
